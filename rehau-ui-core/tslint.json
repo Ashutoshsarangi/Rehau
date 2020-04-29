@@ -1,0 +1,3 @@
+{
+  "extends": "mobilehub-tslint-core/tslint-enforced-rules.json"
+}

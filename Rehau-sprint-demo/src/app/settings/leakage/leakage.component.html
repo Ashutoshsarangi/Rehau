@@ -1,0 +1,20 @@
+<div class="inner-container">
+  <div class='row'>
+    <div class='statusHead'>
+      <p class="copy">{{'Drops leakage measurement' | translate}}</p>
+    </div>
+    <div class='toggleBtn'>
+      <!-- <rh-toggle-switch on-text='On'
+                off-text='Off' disabled="false" vertical="false"
+            ></rh-toggle-switch> -->
+      <rh-toggle-switch id='rh-toggle-switch_1' left-text='OFF' right-text='ON' (switchClick)="toggleAction($event)" [checked]="isLeakageMeasurement">
+      </rh-toggle-switch>
+    </div>
+  </div>
+  <div class="div-space">
+    <span class="text-desc">{{'drop-leckage-description' | translate}}</span>
+  </div>
+  <div *ngIf="isLeakageMeasurement" class="div-space">
+    <app-option-list [picklist]="false" [isSubTitle]="true" [listItems]="listItems" [icon]="icon-next"></app-option-list>
+  </div>
+</div>

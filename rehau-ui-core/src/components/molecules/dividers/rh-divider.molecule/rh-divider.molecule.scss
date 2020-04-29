@@ -1,0 +1,62 @@
+:host {
+  @include default-font();
+
+  .main-container {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--decenaryColor, $decenaryColor);
+    height: calcrem(24px);
+
+    &.shape-padding {
+      padding-top: calcrem(12px);
+      padding-right: calcrem(13px);
+      padding-bottom: calcrem(16px);
+      padding-left: calcrem(16px);
+      height: auto;
+    }
+
+    &.small {
+      height: calcrem(16px);
+    }
+
+    &.large {
+      height: calcrem(32px);
+    }
+  }
+
+  .text {
+    font-family: 'BrixSansRegular';
+    height: calcrem(17px);
+    color: var(--quinaryColor, $quinaryColor);
+    font-size: calcrem(14px);
+    letter-spacing: calcrem(0.4px);
+    line-height: calcrem(17px);
+    @include ellipsisCustom(1);
+    word-break: break-word;
+  }
+
+  .right-icon {
+    padding-left: calcrem(16px);
+    cursor: pointer;
+    width: calcrem(24px);
+    height: calcrem(24px);
+
+    img {
+      width: calcrem(24px);
+      height: calcrem(24px);
+    }
+  }
+
+  .line {
+    margin: 0 auto;
+    border-bottom: calcrem(1px) solid var(--quaternaryColor, $quaternaryColor);
+
+    &.no-background {
+      border-bottom-color: var(--septenaryColor, $septenaryColor);
+    }
+
+    &.small {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<ng-container *ngIf="!picklist">
+    <rh-list-item 
+        [itemList]="listItems"
+        padding=true icon='icon-next' 
+        (checkEvent)="navigateAction($event)"
+        routerLinkActive="active"
+    ></rh-list-item>
+    <rh-divider [hrShow]="true" [background]="false" [fullWidth]="true"></rh-divider>
+</ng-container>
+
+<div *ngIf="picklist">
+    <!-- <ng-container *ngIf="!isSubTitle"> -->
+        <rh-list-item-check
+            [itemList]="listItems"
+            (checkEvent)="selectAction($event)"
+        ></rh-list-item-check>
+        <rh-divider [hrShow]="true" [background]="false" [fullWidth]="true"></rh-divider> 
+    <!-- </ng-container> -->
+</div>

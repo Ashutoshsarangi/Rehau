@@ -1,0 +1,69 @@
+:host {
+  @include default-font();
+
+  .steps-grid {
+    overflow: hidden;
+  }
+
+  .shape-padding {
+    padding-top: calcrem(16.5px);
+    padding-right: calcrem(32px);
+    padding-bottom: calcrem(14px);
+    padding-left: calcrem(32px);
+  }
+
+  .line-row {
+    overflow: hidden;
+  }
+
+  .step-point {
+    max-width: calcrem(8px);
+    height: calcrem(8px);
+    border-radius: 50%;
+    flex-grow: 100;
+    background-color: var(--quinaryColor, $quinaryColor);
+
+    &.active {
+      background-color: var(--primaryColor, $primaryColor);
+    }
+  }
+
+  .step-line {
+    height: calcrem(2.25px);
+    background-color: var(--quinaryColor, $quinaryColor);
+
+    &.active {
+      background-color: var(--primaryColor, $primaryColor);
+    }
+  }
+
+  .texts-row {
+    width: 200%;
+    padding: 0 calcrem(8px);
+    margin-top: calcrem(2.875px);
+
+    .col-xs {
+      position: relative;
+      color: var(--primaryColor, $primaryColor);
+      font-family: 'Helvetica-Neue-65-Medium';
+      font-size: calcrem(14px);
+      line-height: calcrem(16px);
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: calcrem(4px);
+
+      &:first-child {
+        flex-grow: 0.5;
+        margin-left: calcrem(-8px);
+        text-align: left;
+      }
+
+      &:last-child {
+        flex-grow: 0.5;
+        text-align: right;
+      }
+    }
+  }
+}

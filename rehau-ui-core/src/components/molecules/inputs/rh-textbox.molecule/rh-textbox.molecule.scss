@@ -1,0 +1,114 @@
+:host {
+  @include default-font();
+
+  input {
+    outline: none;
+  }
+  .box-padding {
+    padding: calcrem(16px) calcrem(12px);
+  }
+
+  .containerBox {
+    max-width: calcrem(350px);
+    height: calcrem(44px);
+  }
+
+  .input-field {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: "BrixSansBold";
+    font-size: calcrem(18px);
+    line-height: 1;
+    letter-spacing: calcrem(0.27px);
+    padding: 0 calcrem(12px);
+    color: var(--tertiaryColor, $tertiaryColor);
+    border: solid calcrem(1px) var(--quinaryColor, $quinaryColor);
+    &:focus,
+    &:active {
+      outline: none;
+      border-color: var(--tertiaryColor, $tertiaryColor);
+    }
+    &.error {
+      border-color: var(--primaryColor, $primaryColor);
+      position: relative;
+    }
+  }
+
+  .label-white {
+    color: var(--quaternaryColor, $quaternaryColor);
+  }
+
+  .textback {
+    color: var(--tertiaryColor, $tertiaryColor);
+  }
+
+  .input-field::placeholder {
+    color: var(--tertiaryColor, $tertiaryColor);
+    opacity: 1; /* Firefox */
+  }
+
+  .input-field:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--tertiaryColor, $tertiaryColor);
+  }
+
+  .input-field::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--tertiaryColor, $tertiaryColor);
+  }
+
+  .container2 {
+    max-width: calcrem(32px);
+    // height: calcrem(24px);
+    padding-left: calcrem(8px);
+    padding-right: 0;
+  }
+
+  .description {
+    height: auto;
+    max-height: calcrem(50px);
+    line-height: calcrem(20px);
+    overflow: hidden;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    z-index: 990;
+
+    span {
+      display: block;
+      padding: calcrem(6px) 0 calcrem(17px) 0;
+      font-size: calcrem(14px);
+    }
+  }
+
+  .error {
+    height: auto;
+    line-height: calcrem(20px);
+    max-height: calcrem(60px);
+    overflow: hidden;
+    width: 100%;
+    color: var(--primaryColor, $primaryColor);
+    background-color: var(--quaternaryColor, $quaternaryColor);
+    // position: relative;
+    bottom: calcrem(1px);
+    z-index: 55;
+
+    span {
+      display: block;
+      padding: calcrem(8px);
+      font-size: calcrem(14px);
+    }
+  }
+
+  .calendar-style {
+    position: absolute;
+    z-index: 2500;
+    right: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+

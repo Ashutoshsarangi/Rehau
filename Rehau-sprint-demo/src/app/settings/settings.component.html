@@ -1,0 +1,31 @@
+<div class="inner-container">
+  <div class='row'>
+    <div class='statusHead'>Status</div>
+    <div class='toggleBtn'>
+      <!-- <rh-toggle-switch on-text='Present'
+                off-text='Absent' disabled="false" vertical="false"
+            ></rh-toggle-switch> -->
+      <!-- <rh-toggle-switch id='rh-toggle-switch_1' left-text='Absent'
+                 right-text='Present' (switchClick)="toggleAction($event)">
+            </rh-toggle-switch> -->
+      <rh-toggle-switch id='rh-toggle-switch_1' left-text='Absent' right-text='Present' 
+        (switchClick)="toggleAction($event)" [checked]="settingStatus">
+      </rh-toggle-switch>
+    </div>
+  </div>
+  <div class='row'>
+    <span class="text-desc">{{'Status_description' | translate}}</span>
+  </div>
+  <div class='row listHeader'>
+    <span class="text-desc">{{'WATER CONTROL' | translate}}</span>
+  </div>
+  <app-option-list [picklist]="false" [listItems]="waterControlItems" [icon]="icon-next"></app-option-list>
+  <div class='row listHeader'>
+    <span class="text-desc">{{'GENERAL' | translate}}</span>
+  </div>
+  <app-option-list [picklist]="false" [listItems]="generalItems" [icon]="icon-next"></app-option-list>
+  <div class='row listHeader'>
+    <span class="text-desc">{{'SUPPORT' | translate}}</span>
+  </div>
+  <app-option-list [picklist]="false" [listItems]="supportItems" [icon]="icon-next"></app-option-list>
+</div>

@@ -1,0 +1,28 @@
+{
+  "name": "rehau-functional-core",
+  "version": "0.0.8",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0",
+    "@ngrx/store": "^8.6.0",
+    "simple-crypto-js": "^2.2.0",
+    "@auth0/angular-jwt": "^4.0.0",
+    "ionic-cordova-oauth": "0.0.9",
+    "sha": "^3.0.0",
+    "@ngx-translate/core": "^12.1.2",
+    "backoff-rxjs": "^6.3.3"
+  },
+  "main": "bundles/rehau-functional-core.umd.js",
+  "module": "fesm5/rehau-functional-core.js",
+  "es2015": "fesm2015/rehau-functional-core.js",
+  "esm5": "esm5/rehau-functional-core.js",
+  "esm2015": "esm2015/rehau-functional-core.js",
+  "fesm5": "fesm5/rehau-functional-core.js",
+  "fesm2015": "fesm2015/rehau-functional-core.js",
+  "typings": "rehau-functional-core.d.ts",
+  "metadata": "rehau-functional-core.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

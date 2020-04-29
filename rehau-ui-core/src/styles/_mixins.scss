@@ -1,0 +1,33 @@
+@mixin ellipsisCustom($linecamp) {
+  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: $linecamp;
+  -webkit-box-orient: vertical;
+}
+
+
+@mixin rehau-icons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin default-font() {
+  font-family: 'BrixSansRegular';
+  font-weight: 400;
+  i {
+    &[class^="icon-"], 
+    &[class*="icon-"] {
+      @include rehau-icons();
+    }
+  }
+}

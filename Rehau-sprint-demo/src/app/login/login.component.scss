@@ -1,0 +1,63 @@
+$active-red: #dd0060 !default;
+
+.inner {
+    padding: 1.6rem;
+}
+.inner-container {
+    max-width: 100%;
+    width: calc(100% - 56px);
+    max-height: 100%;
+    overflow: auto;
+    padding: 20px 76px 20px 20px;
+    margin: auto;
+    position: relative;
+}
+
+.inner-wrapper {
+    padding: 10px 0;
+    position: relative;
+}
+
+.banner {
+    width: 100%
+}
+
+  a.link {
+    font-family: "BrixSansBold";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.27px;
+    color: $active-red !important;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  
+  .link.primary-link {
+    font-size: 1.2rem;
+    display: inline;
+    // width: 100%;
+  }
+  
+  .secondary-link {
+    display: block;
+    width: max-content;
+  }
+
+
+@media screen and (max-width: 550px){
+    html {
+        font-size: 0.8rem;
+    }
+    .inner-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0;
+        border: none;
+        position: static;
+        transform: none;
+    }
+}

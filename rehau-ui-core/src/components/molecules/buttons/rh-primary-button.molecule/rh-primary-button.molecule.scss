@@ -1,0 +1,548 @@
+:host {
+  @include default-font();
+  .rect-button {
+    border-radius: 0;
+    text-align: center;
+    box-shadow: none;
+    display: inline;
+  }
+
+  .button {
+    height: calcrem(44px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-width: auto;
+    font-size: 1.25rem; //  20px
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    will-change: box-shadow, transform;
+
+    background: var(--primaryColor, $primaryColor);
+    color: var(--quaternaryColor, $quaternaryColor);
+    .icon {
+      background-color: $primaryColor;
+      &:before {
+       color: var(--quaternaryColor, $quaternaryColor);
+      }
+    }
+    &:focus, &:active {
+     color: var(--quaternaryColor, $quaternaryColor);
+      background-color: $tertiaryColor;
+    }
+    
+    &:hover {
+     color: var(--quaternaryColor, $quaternaryColor);
+      &:after {
+        width: 100%;
+        transition: width 0.2s linear;
+      }
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top:0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: $tertiaryColor;
+      transform-origin:left;
+      z-index:-1;
+    }
+    &:focus, &:active {
+      outline: none;
+      box-shadow: none !important;
+      background-color: $tertiaryColor;
+     color: var(--quaternaryColor, $quaternaryColor);
+      .icon {
+        background-color: $tertiaryColor;
+        &:before {
+         color: var(--quaternaryColor, $quaternaryColor);
+        }
+        &:after {
+          width: 100%;
+          transition: width 0.2s linear;
+        }
+      }
+    }
+  }
+
+  .icon {
+    height: 44px;
+    width: 44px;
+    // position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    &:after {
+      position: absolute;
+      content: '';
+      top:0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: $tertiaryColor;
+      transform-origin:left;
+      z-index:-1;
+    }
+    &:focus, &:active {
+      box-shadow: none;
+      &:after {
+        width: 100%;
+        transition: width 0.2s linear;
+      }
+    }
+  }
+
+  .text-button-custom {
+    @include ellipsisCustom(1);
+    cursor: pointer;
+    font-size: calcrem(20px);
+    margin: 0 8px 0 16px;
+    line-height: 1;
+    text-transform: capitalize;
+    font-family: "BrixSansBold";
+  }
+
+  .cta-btn {
+    background: var(--primaryColor, $primaryColor);
+    color: var(--quaternaryColor, $quaternaryColor);
+    .icon {
+      background-color: $primaryColor;
+      &:before {
+       color: var(--quaternaryColor, $quaternaryColor);
+      }
+    }
+    &:focus, &:active {
+     color: var(--quaternaryColor, $quaternaryColor);
+      background-color: $tertiaryColor;
+    }
+  }
+
+  .secondary-btn {
+    background-color: $quinaryColor;
+    color: var(--quaternaryColor, $quaternaryColor);
+    .icon {
+      background-color: $quinaryColor;
+      &:before {
+       color: var(--quaternaryColor, $quaternaryColor);
+      } 
+    }
+    &:hover:after {
+      background-color: $tertiaryColor;
+    }
+    &:hover {
+     color: var(--quaternaryColor, $quaternaryColor);
+    }
+    &:focus, &:active {
+     color: var(--quaternaryColor, $quaternaryColor);
+      background-color: $tertiaryColor;
+      .icon:after {
+        background-color: $tertiaryColor;
+      }
+      .icon:before {
+       color: var(--quaternaryColor, $quaternaryColor);
+      }
+    }
+  }
+
+  .standard-btn {
+    background: transparent;
+    color: var(--primaryColor, $primaryColor);
+    .icon {
+      background-color: transparent;
+      &:before {
+        color: $primaryColor;
+      }
+      &:hover:after {
+        width: 100%;
+        background-color: $primaryColor;
+        transition: width 0.2s linear;
+      }
+      &:focus, &:active {
+        &:after {
+          width: 100%;
+          background-color: $tertiaryColor;
+          transition: width 0.2s linear;
+        }
+      }
+    }
+    &:hover {
+      color: var(--primaryColor, $primaryColor);
+      &:after {
+        width: 0;
+      }
+      .icon {
+        &:before {
+          color: var(--quaternaryColor, $quaternaryColor);
+        }
+        &:after {
+          width: 100%;
+          background-color: $primaryColor;
+          transition: width 0.2s linear;
+        }
+      }
+    }
+    &:focus, &:active {
+      color: $tertiaryColor;
+      background-color: transparent;
+      .icon {
+        &:before {
+          color: var(--quaternaryColor, $quaternaryColor);
+        }
+        &:after {
+          width: 100%;
+          background-color: $tertiaryColor;
+          transition: width 0.2s linear;
+        }
+      }
+    }
+  }
+
+  .icon-btn {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    height: auto;
+    width: 0;
+    .icon {
+      width: auto;
+      height: auto;
+      font-size: 20px;
+      display: contents;
+      &:before {
+        color: var(--primaryColor, $primaryColor);
+      }
+      &:hover {
+        &:after {
+          width: 0;
+        }
+        &:before {
+          color: $tertiaryColor;
+        }
+      }
+      &:focus, &:active {
+        background-color: transparent;
+        &:after {
+          width: 0
+        }
+        .icon {
+          &:before {
+            background-color: transparent;
+            color: $tertiaryColor;
+          }
+          &:after {
+            width: 0;
+          }
+        }
+      }
+    }
+    &:focus, &:active {
+      background-color: transparent;
+      &:after {
+        width: 0
+      }
+      .icon {
+        background-color: transparent;
+        &:before {
+          background-color: transparent;
+          color: $tertiaryColor;
+        }
+        &:after {
+          width: 0;
+        }
+      }
+    }
+  }
+  .icon-secondary-btn {
+    width: 44px;
+    padding: 0;
+    background-color: $primaryColor;
+    label {
+      display: none;
+    }
+    .icon {
+      font-size: 20px;
+      left: 0;
+      background-color: transparent;
+      &:before {
+        color: var(--quaternaryColor, $quaternaryColor);
+      }
+      &:hover:after {
+        width: 100%;
+        background-color: $tertiaryColor;
+        transition: width 0.2s linear;
+      }
+    }
+    &:hover, &:focus, &:active {
+      box-shadow: none;
+      color: var(--quaternaryColor, $quaternaryColor);
+    }
+  }
+
+  .transparentbutton {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-width: auto;
+    font-size: 1.25rem; //  20px
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 0;
+    cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      .text-button-custom { 
+        font-size: 20px;
+        font-family: "BrixSansBold";
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: 0.3px;      
+        color: var(--primaryColor, $primaryColor);
+        margin: 0 17px 0 0;
+      }
+      .icon-next{
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: auto;
+        &:before {
+        color: var(--primaryColor, $primaryColor);
+        font-size: 15px;
+      }
+    }
+  }
+
+  .disabled {
+    cursor: not-allowed;
+    opacity: 1 !important;
+    background: var(--senaryColor, $senaryColor);
+    color: var(--quaternaryColor, $quaternaryColor);
+    pointer-events: none;
+    .icon {
+      background: var(--senaryColor, $senaryColor);
+      color: var(--quaternaryColor, $quaternaryColor); 
+    }
+  }
+}
+
+
+.quinary-background,
+.quaternary-background .quinary-background,
+.primary-background .quinary-background,
+.secondary-background .quinary-background,
+.tertiary-background .quinary-background {
+  .btn {
+    &.cta-btn {
+      background-color: $tertiaryColor;
+      &:hover:after {
+        background-color: $quaternaryColor;
+      }
+      .icon {
+      background-color: $tertiaryColor;
+        &:hover:after {
+          background-color: $quaternaryColor;
+        }
+      }
+      &:hover {
+        color: $tertiaryColor;
+        .icon:before {
+          color: $quaternaryColor;
+        }
+      }
+      &:focus, &:active {
+        color: $tertiaryColor;
+          background-color: $quaternaryColor;
+        
+        .icon:after {
+          background-color: $quaternaryColor;
+        }
+        .icon:before {
+          color: $tertiaryColor;
+        }
+      }
+    }
+    &.icon-btn {
+      &::before {
+        color: $tertiaryColor;
+      }
+      &:hover {
+        &:before {
+          color: $quaternaryColor;
+        }
+      }
+      &:focus, &:active {
+        background-color: transparent;
+        &:before {
+          color: $quaternaryColor;
+        }
+      }
+    }
+    &.icon-secondary-btn {
+      background-color: $tertiaryColor;
+      .icon {
+        &:hover:after {
+          background-color: $quaternaryColor;
+        }
+      }
+      &:hover, &:focus, &:active {
+        color: $tertiaryColor;
+        .icon:after {
+          background-color: $quaternaryColor;
+        }
+        .icon:before {
+          color: $tertiaryColor;
+        }
+      } 
+    }
+    &.standard-btn {
+      color: $tertiaryColor;
+      .icon {
+        &:before {
+          color: $tertiaryColor;
+        }
+        &:hover:after {
+          background-color: $tertiaryColor;
+        }
+        &:focus, &:active {
+          &:after {
+            background-color: $quaternaryColor;
+          }
+        }
+      }
+      &:hover {
+        .icon {
+          &::before {
+            color: $quaternaryColor;
+          }
+          &:after {
+            background-color: $tertiaryColor;
+          }
+        }
+      }
+      &:focus, &:active {
+        color: $quaternaryColor;
+        .icon:after {
+          background-color: $quaternaryColor;
+        }
+        .icon:before {
+          color: $tertiaryColor;
+        }
+      } 
+    }
+  }
+}
+
+.quaternary-background,
+.quinary-background .quaternary-background,
+.primary-background .quaternary-background,
+.secondary-background .quaternary-background,
+.tertiary-background .quaternary-background {
+  .btn {
+    &.cta-btn {
+      &:hover:after {
+        background-color: $quaternaryColor;
+      }
+      .icon {
+        &:hover:after {
+          background-color: $quaternaryColor;
+        }
+      }
+      &:hover {
+        color: $tertiaryColor;
+        .icon:before {
+          color: $quaternaryColor;
+        }
+      }
+      &:focus, &:active {
+        color: $tertiaryColor;
+        background-color: $quaternaryColor;
+        .icon:after {
+          background-color: $quaternaryColor;
+        }
+        .icon:before {
+          color: $tertiaryColor;
+        }
+      }
+    }
+    &.secondary-btn {
+      &:hover:after {
+        background-color: $quaternaryColor;
+      }
+      &:hover {
+        color: $tertiaryColor;
+      }
+      &:focus, &:active {
+        color: $tertiaryColor;
+        background-color: $quaternaryColor;
+        .icon:after {
+          background-color: $quaternaryColor;
+        }
+        .icon:before {
+          color: $tertiaryColor;
+
+        }
+      }
+    }
+    &.icon-btn {
+      &:hover {
+        &:before {
+          color: $quaternaryColor;
+        }
+      }
+      &:focus, &:active {
+        background-color: transparent;
+        &:before {
+          color: $quaternaryColor;
+        }
+      }
+    }
+    &.icon-secondary-btn {
+      .icon {
+        &:hover:after {
+          background-color: $quaternaryColor;
+        }
+      }
+      &:hover, &:focus, &:active {
+        color: $tertiaryColor;
+        .icon:after {
+          background-color: $quaternaryColor;
+        }
+        .icon:before {
+          color: $tertiaryColor;
+        }
+      } 
+    }
+    &.standard-btn {
+      &:focus, &:active {
+        color: $quaternaryColor;
+        .icon:after {
+          background-color: $quaternaryColor;
+        }
+        .icon:before {
+          color: $tertiaryColor;
+        }
+      } 
+    }
+  }
+}

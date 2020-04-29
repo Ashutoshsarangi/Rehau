@@ -1,0 +1,114 @@
+:host {
+  @include default-font();
+
+  .box-background {
+    background-color: var(--quaternaryColor, $quaternaryColor);
+  }
+
+  .small-tooltip {
+    --tooltip-max-width: 150px;
+  }
+
+
+  .title-no-margin {
+    height: calcrem(24px);
+  }
+
+  .main-column {
+    padding: 0;
+
+    &.column-padding {
+      padding: calcrem(16px) calcrem(12px);
+    }
+
+    &.column-height {
+      max-height: calcrem(109px);
+    }
+
+    &.no-desktop {
+      padding: calcrem(16px) 0;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .radio-right {
+    margin: calcrem(7.5px) 0 calcrem(7.5px) calcrem(7px);
+  }
+
+  .radio-left {
+    margin: 0 calcrem(7px) 0 0;
+  }
+
+  .radio-label {
+    position: relative;
+    min-width: calcrem(25px);
+
+    & > label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & input[type='radio'] {
+      display: none;
+      &.disabled ~ label {
+        cursor: not-allowed;
+        .radio {
+          border-color: var(--nonaryColor, $nonaryColor);
+        }
+        .text-label {
+          cursor: not-allowed;
+          color: var(--nonaryColor, $nonaryColor);
+        }
+      }
+    }
+
+    .radio {
+      display: inline-block;
+      min-width: 2.6rem;
+      min-height: 2.6rem;
+      border: 0.1rem solid var(--quinaryColor, #7f7f7f);
+      border-radius: 50%;
+      position: relative;
+      margin-right: calcrem(12px);
+    }
+
+    .text-label {
+      font-family: "BrixSansRegular";
+      font-size: calcrem(18px);
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: calcrem(0.17px);
+      color: var(--tertiaryColor, $tertiaryColor);
+    }
+
+    & input[type='radio']:checked + label .radio {
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: var(--tertiaryColor, $tertiaryColor);
+      }
+    }
+  }
+
+  .tooltip-container {
+    display: flex;
+    align-items: center;
+    padding: calcrem(5px);
+  }
+
+  .divider-container {
+    width: 100%;
+  }
+}
+

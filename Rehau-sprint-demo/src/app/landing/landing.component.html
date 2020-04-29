@@ -1,0 +1,13 @@
+<nav class="nav-bar" mat-tab-nav-bar>
+  <a class="tab-link mat-tab-link" mat-tab-link *ngFor="let link of navLinks let i = index" [routerLink]="link.link" routerLinkActive
+    #rla="routerLinkActive" [active]="isOnline && i ==0 ?true:rla.isActive" aria-label="link.label" (click)="handleSelect(link)">
+    <div class="icon"><span [class]="i == tabSelectedIndex ? link.iconActive: link.icon"></span>
+      <span *ngIf="link.label == 'Notification' " class="notification"></span>
+    </div>
+  </a>
+</nav>
+<div [@routeAnimations]="animationState">
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
+</div>
+<!-- <rh-onboarding [goBack]="goBack" [boardingSteps]="onBoardingElements" (nextAction)="testNextClick($event)" [activeIndex]="tempActive"
+  (prevAction)="testPrevClick($event)" [progressValue]="progressValue"></rh-onboarding> -->

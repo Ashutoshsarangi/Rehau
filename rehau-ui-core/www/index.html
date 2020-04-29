@@ -1,0 +1,8 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Rehau Ui Showcase</title> <meta name="description" content="Made with rh-stencil-cli"> <link href="/build/rehau-ui-core.css" rel="stylesheet"> <script type="module" src="/build/rehau-ui-core.esm.js"></script> <script nomodule="" src="/build/rehau-ui-core.js"></script> <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARlRxtu8Te3yDAEQ-ewsMaBS7qmoXZUOQ&amp;libraries=places" callback="loadMap" async="" defer=""></script> </head> <body> <rh-app></rh-app> <script>if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  // auto-unregister service worker during dev mode
+  navigator.serviceWorker.getRegistration().then(function(registration) {
+    if (registration) {
+      registration.unregister().then(function() { location.reload(true) });
+    }
+  });
+}</script></body></html>

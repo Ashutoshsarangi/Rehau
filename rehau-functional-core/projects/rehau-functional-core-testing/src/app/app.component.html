@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+  <a routerLink="dashboard" routerLinkActive="active">Dashboard</a>
+  <a routerLink="about" routerLinkActive="active">About</a>
+</header>
+
+<div [@routeAnimations]="o && o.activatedRouteData 
+      && o.activatedRouteData['animation']">
+      {{showLoader$.showLoader | async }}
+      <ng-container *ngIf="showLoader$">
+        <p>Loader</p>
+      </ng-container>
+
+      <button (click)="nextClick()">next click</button>
+      <button (click)="prevClick()">prev click</button>
+  <router-outlet #o="outlet"></router-outlet>
+</div>

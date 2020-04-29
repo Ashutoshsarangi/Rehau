@@ -1,0 +1,4 @@
+<div class="inner-container">
+  <rh-onboarding [goBack]="goBack" [boardingSteps]="onBoardingElements" (nextAction)="testNextClick($event)" [activeIndex]="tempActive"
+    (prevAction)="testPrevClick($event)" (clickHandle)="addSensor($event)" [progressValue]="progressValue"></rh-onboarding>
+</div>

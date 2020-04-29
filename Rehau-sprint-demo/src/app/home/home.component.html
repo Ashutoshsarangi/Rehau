@@ -1,0 +1,25 @@
+<div class="inner-container">
+  <h3>Home Page!!</h3>
+
+  <div class="spce-content row">
+    <div class="inline-row-div">
+      <h4>Is leakage detected</h4>
+    </div>
+    <div class="inline-row-btn">
+      <rh-toggle-switch id='rh-toggle-switch_1' left-text='OFF' right-text='ON' (switchClick)="leakageAction($event)" [checked]='flag'>
+      </rh-toggle-switch>
+    </div>
+    <div>
+      <button class="button-css" (click)="callOnBoarding()">Device On-Boarding</button>
+    </div>
+    <!-- <app-devices-metrics class="animationIf" *ngIf="hasReGuard"></app-devices-metrics> -->
+
+  </div>
+  <div class="card" *ngFor="let sensor of sensors">
+    <div class="Cardcontainer">
+      <h4><b>{{ sensor.title }}</b></h4>
+      <p>{{sensor.value}}</p>
+    </div>
+  </div>
+
+</div>

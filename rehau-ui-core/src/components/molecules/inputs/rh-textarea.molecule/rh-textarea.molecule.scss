@@ -1,0 +1,49 @@
+:host {
+  @include default-font();
+
+  .main-grid {
+    padding: 0;
+    margin: 0;
+
+    &.box-padding {
+      padding: calcrem(16px) calcrem(12px);
+    }
+  }
+
+  input {
+    outline: none;
+  }
+
+  .textarea-container {
+    box-shadow: none !important;
+    height: calcrem(174px);
+    max-width: calcrem(350px);
+    padding: 0;
+    textarea {
+      width: 100%;
+      height: 100%;
+      padding: calcrem(12px);
+      border: calcrem(1px) solid var(--quinaryColor, $quinaryColor);
+      background: transparent;
+      box-sizing: border-box;
+      resize: none;
+      text-align: justify;
+      font-family: "BrixSansBold";
+      font-size: calcrem(18px);
+      line-height: 1;
+      letter-spacing: calcrem(0.27px);
+      color: var(--tertiaryColor, #000000);
+      &:focus,
+      &:active {
+        outline: none;
+        border-color: var(--tertiaryColor, $tertiaryColor);
+      }
+      overflow: -moz-scrollbars-none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    } 
+  }
+}

@@ -1,0 +1,368 @@
+:host {
+  @include default-font();
+
+  .shape-padding {
+    width: 100%;
+    padding-top: calcrem(12px);
+    padding-bottom: calcrem(14px);
+    position: relative;
+  }
+
+  .badgde-align {
+    align-self: flex-end;
+  }
+
+  .nested {
+    background-color: var(--quaternaryColor, $quaternaryColor);
+  }
+
+  .main-column {
+    min-width: 0;
+  }
+
+  .grayElements {
+    color: var(--quinaryColor, $quinaryColor);
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(16px);
+    letter-spacing: calcrem(0.4px);
+    line-height: calcrem(19px);
+    max-height: calcrem(40px);
+    margin-bottom: calcrem(4px);
+    margin-left: calcrem(10px);
+    word-break: break-word;
+  }
+
+  .subtitle {
+    color: var(--tertiaryColor, $tertiaryColor);
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(18px);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: calcrem(0.23px);
+    margin-bottom: calcrem(4px);
+    max-height: calcrem(34px);
+    @include ellipsisCustom(2);
+    height: auto;
+    word-break: break-word;
+    cursor: pointer;
+  }
+
+  .subtitle-with-padding {
+    color: var(--tertiaryColor, $tertiaryColor);
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(18px);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: calcrem(0.23px);
+    max-height: calcrem(34px);
+    @include ellipsisCustom(2);
+    height: auto;
+    margin-bottom: calcrem(4px);
+    word-break: break-word;
+    cursor: pointer;
+  }
+
+  .subtitle1 {
+    color: var(--tertiaryColor, $tertiaryColor);
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(18px);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: calcrem(0.23px);
+    margin-bottom: calcrem(4px);
+    max-height: calcrem(51px);
+    @include ellipsisCustom(3);
+    height: auto;
+    word-break: break-word;
+    cursor: pointer;
+  }
+
+  .subtitle1-with-padding {
+    color: var(--tertiaryColor, $tertiaryColor);
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(18px);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: calcrem(0.23px);
+    max-height: calcrem(51px);
+    @include ellipsisCustom(3);
+    height: auto;
+    margin-bottom: calcrem(4px);
+    word-break: break-word;
+    cursor: pointer;
+  }
+
+  .title {
+    color: var(--tertiaryColor, $tertiaryColor);
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(17px);
+    line-height: calcrem(20px);
+    letter-spacing: calcrem(0.4px);
+    height: auto;
+    max-height: calcrem(40px);
+    @include ellipsisCustom(2);
+    word-break: break-word;
+    cursor: pointer;
+  }
+
+  .title-no-margin-left {
+    margin-left: 0;
+  }
+
+  .title-margin-left {
+    margin-left: calcrem(15px);
+  }
+
+  .icon1 {
+    height: calcrem(24px);
+    width: calcrem(24px);
+    color: var(--primaryColor, $primaryColor);
+    cursor: pointer;
+    float: right;
+  }
+
+  .title-with-padding1 {
+    color: var(--tertiaryColor, $tertiaryColor);
+    font-family: 'BrixSansRegular';
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    font-size: calcrem(18px);
+    letter-spacing: calcrem(0.23px);
+    height: auto;
+    @include ellipsisCustom(2);
+    word-break: break-word;
+    cursor: pointer;
+  }
+
+  .badge-with-padding {
+    margin-right: calcrem(8px) !important;
+  }
+
+  .badge-without-padding {
+    margin-right: 0 !important;
+  }
+
+  .badge {
+    text-align: center;
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(11px);
+    line-height: calcrem(14px);
+    margin-top: calcrem(3px);
+    width: auto;
+    min-width: calcrem(56px);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: calcrem(9px);
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calcrem(19.6px);
+  }
+
+  .badge-active {
+    color: var(--quaternaryColor, $quaternaryColor);
+    background: var(--secondaryColor, $secondaryColor);
+  }
+
+  .badge-disable {
+    color: var(--quinaryColor, $quinaryColor);
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(11px);
+    line-height: calcrem(14px);
+    margin-top: calcrem(2px);
+    width: auto;
+    min-width: calcrem(56px);
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--quaternaryColor, $quaternaryColor);
+    border: (1px) solid var(--senaryColor, $senaryColor);
+  }
+
+  .icon {
+    cursor: pointer;
+    float: right;
+    font-size: calcrem(17px);
+    text-align: right;
+    i {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .iconLeft {
+    height: calcrem(24px);
+    width: calcrem(24px);
+    margin-top: calcrem(3px);
+    color: var(--primaryColor, $primaryColor);
+    cursor: pointer;
+  }
+
+  .space-arrow {
+    padding-left: calcrem(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-1 {
+    max-height: calcrem(24px);
+  }
+
+  .align-one-line {
+    display: flex;
+    align-items: center;
+  }
+
+  .iconUp {
+    height: calcrem(24px);
+    width: calcrem(24px);
+    color: var(--primaryColor, $primaryColor);
+    float: right;
+    cursor: pointer;
+  }
+
+  .tooltip-margin {
+    max-width: calcrem(24px);
+  }
+
+  .title-vertical-centered {
+    display: flex;
+    align-items: center;
+  }
+
+  .badge-transparent {
+    color: var(--quinaryColor, $quinaryColor);
+    border: calcrem(1px) solid var(--quinaryColor, $quinaryColor);
+  }
+
+  // TOGGLE
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: calcrem(60px);
+    height: calcrem(34px);
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--octonaryColor, $octonaryColor);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: calcrem(26px);
+    width: calcrem(26px);
+    left: calcrem(4px);
+    bottom: calcrem(4px);
+    background-color: quaternaryColor;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: var(--thirteenthColor, $thirteenthColor);
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 calcrem(1px) var(--thirteenthColor, $thirteenthColor);
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: calcrem(34px);
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* The slider custom */
+
+  .switch-custom {
+    position: relative;
+    display: inline-block;
+    width: calcrem(35px);
+    height: calcrem(10px);
+  }
+
+  .switch-custom input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider-custom {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--octonaryColor, $octonaryColor);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+
+  .slider-custom-button {
+    position: absolute;
+    content: '';
+    height: calcrem(24px);
+    width: calcrem(24px);
+    border-radius: 50%;
+    left: calc(0% - 12px);
+    bottom: (-7px);
+    background-color: var(--duodenaryColor, $duodenaryColor);
+    box-shadow: 0 0.1rem 0.5rem var(--tertiaryColor, $tertiaryColor);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  input:checked + .slider-custom {
+    background-color: var(--thirteenthColor, $thirteenthColor);
+  }
+
+  input:focus + .slider-custom {
+    box-shadow: 0 0 calcrem(1px) var(--thirteenthColor, $thirteenthColor);
+  }
+
+  input:checked + .slider-custom:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+}

@@ -1,0 +1,53 @@
+
+$fonts-path: "./../assets/fonts";
+$ionicons-font-path: $fonts-path !default;
+
+@import "./rh-icons/style";
+
+@font-face {
+  font-family: 'BrixSansBlack';
+  src: url('#{$fonts_path}/BrixSansBlack.eot');
+  src: url('#{$fonts_path}/BrixSansBlack.eot?#iefix') format('embedded-opentype'),
+      url('#{$fonts_path}/BrixSansBlack.woff2') format('woff2'),
+      url('#{$fonts_path}/BrixSansBlack.woff') format('woff'),
+      url('#{$fonts_path}/BrixSansBlack.ttf') format('truetype'),
+      url('#{$fonts_path}/BrixSansBlack.svg#BrixSansBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrixSansRegular';
+  src: url('#{$fonts_path}/BrixSansRegular.eot');
+  src: url('#{$fonts_path}/BrixSansRegular.eot?#iefix') format('embedded-opentype'),
+      url('#{$fonts_path}/BrixSansRegular.woff2') format('woff2'),
+      url('#{$fonts_path}/BrixSansRegular.woff') format('woff'),
+      url('#{$fonts_path}/BrixSansRegular.ttf') format('truetype'),
+      url('#{$fonts_path}/BrixSansRegular.svg#BrixSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrixSansLight';
+  src: url('#{$fonts_path}/BrixSansLight.eot');
+  src: url('#{$fonts_path}/BrixSansLight.eot?#iefix') format('embedded-opentype'),
+      url('#{$fonts_path}/BrixSansLight.woff2') format('woff2'),
+      url('#{$fonts_path}/BrixSansLight.woff') format('woff'),
+      url('#{$fonts_path}/BrixSansLight.ttf') format('truetype'),
+      url('#{$fonts_path}/BrixSansLight.svg#BrixSansLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrixSansBold';
+  src: url('#{$fonts_path}/BrixSansBold.eot');
+  src: url('#{$fonts_path}/BrixSansBold.eot?#iefix') format('embedded-opentype'),
+      url('#{$fonts_path}/BrixSansBold.woff2') format('woff2'),
+      url('#{$fonts_path}/BrixSansBold.woff') format('woff'),
+      url('#{$fonts_path}/BrixSansBold.ttf') format('truetype'),
+      url('#{$fonts_path}/BrixSansBold.svg#BrixSansBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

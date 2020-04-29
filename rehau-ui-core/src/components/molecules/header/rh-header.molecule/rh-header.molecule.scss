@@ -1,0 +1,117 @@
+:host {
+    @include default-font();
+
+    .navbar {
+        position: relative;
+        border: 0;
+        padding: calcrem(10px) calcrem(20px);
+        background-color: var(--secondaryColor, $secondaryColor);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        height: calcrem(72px);
+        transition: height 0.3s ease-in-out 0s;
+        &.offline-navbar {
+            background-color: var(--septenaryColor, $septenaryColor);
+            .navbar-wrapper {
+                .title {
+                    color: var(--tertiaryColor, $tertiaryColor);
+                }
+                .subtitle {
+                    color: var(--primaryColor, $primaryColor);
+                }
+            }
+        }
+        .icon {
+            display: none;
+        }
+        .navbar-wrapper {
+            display: inline-flex;
+            align-items: baseline;
+            .title-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .header-badge {
+                    display: block;
+                    margin-right: calcrem(10px);
+                }
+            }
+            .title {
+                position: relative;
+                line-height: 30px;
+                padding: 0;
+                color: var(--quaternaryColor, $quaternaryColor);
+                font-family: "BrixSansBlack";
+                font-size: calcrem(24px);
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: 0.23px;
+                margin-right: calcrem(10px);
+                margin-bottom: calcrem(7px);
+                text-transform: capitalize;
+            }
+            .subtitle {
+                font-family: "BrixSansBlack";
+                font-size: calcrem(12px);
+                font-style: normal;
+                letter-spacing: 0.11px;
+                color: var(--quaternaryColor, $quaternaryColor);    
+                line-height: 1;
+                margin-right: calcrem(10px);
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .innerpageheader {
+        justify-content: center;
+        align-content: center;
+        height: calcrem(44px) !important;
+        position: relative;
+        transition: height 0.3s ease-in-out 0s;
+        .icon {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .navbar-wrapper {
+            align-self: center;
+            .title {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .righticon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    @media screen and (max-width: $rh-lg-min) {
+        .navbar {
+            height: calcrem(96px);
+            align-items: flex-end;
+            .navbar-wrapper {
+                flex-direction: column;
+                .title {
+                    font-size: calcrem(28px);
+                }
+            }
+        }
+    }
+}

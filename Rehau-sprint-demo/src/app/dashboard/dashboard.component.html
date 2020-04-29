@@ -1,0 +1,27 @@
+<h2>{{'Status_description' | translate}}</h2>
+
+<rh-input-field-dropdown id='rh-input-field-dropdown_1' padding=true label='Label' placeholder="Please Select One" [elementlist]=this.dropdownList
+  isFormComponent=false (update)="testChange(this)">
+</rh-input-field-dropdown>
+<br>
+<rh-primary-button id='rh-primary-button_1' text='mehr' icon="icon-next" ctabutton=true [routerLink]="['/home']"></rh-primary-button>
+
+<rh-primary-button id='rh-primary-button_9' text='mehr' secondary=true icon="icon-settings" disabled=false></rh-primary-button>
+
+
+
+<rh-primary-button id='rh-primary-button_10' text='mehr' standard=true icon="icon-home" disabled=false></rh-primary-button>
+
+<rh-primary-button id='rh-primary-button_11' icon="icon-plus" iconbutton=true disabled=false></rh-primary-button>
+
+<rh-primary-button id='rh-primary-button_12' icon="icon-plus" iconsecondary=true disabled=false></rh-primary-button>
+
+<rh-primary-button id='rh-primary-button_15' text='mehr' ctabutton=true icon="icon-settings" disabled=true></rh-primary-button>
+
+
+
+<ul>
+  <li>
+    <h2><a [routerLink]="['/home']">Home </a></h2>
+  </li>
+</ul>

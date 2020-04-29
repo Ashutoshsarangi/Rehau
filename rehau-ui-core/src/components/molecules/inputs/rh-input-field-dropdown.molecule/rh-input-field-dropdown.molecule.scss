@@ -1,0 +1,173 @@
+:host {
+  @include default-font();
+
+  .box {
+    padding: 0;
+  }
+
+  .box-padding {
+    padding: calcrem(16px) calcrem(12px);
+  }
+
+  .first-box {
+    height: auto;
+    width: auto;
+    background: var(--quaternaryColor, $quaternaryColor);
+  }
+
+  .first-box-background {
+    height: auto;
+    width: auto;
+    background: transparent;
+  }
+
+  .custom-label {
+    margin: calcrem(8px) 0 calcrem(2px) 0;
+  }
+
+  .quaternaryColor {
+    color: var(--quaternaryColor, $quaternaryColor);
+  }
+
+  .body2 {
+    font-family: 'BrixSansRegular', Helvetica, Arial, sans-serif;
+    font-size: calcrem(13px);
+    line-height: calcrem(16px);
+    letter-spacing: calcrem(0.2px);
+  }
+
+  .col-height {
+    height: calcrem(44px);
+  }
+
+  .right-aligned {
+    text-align: right;
+  }
+
+  .dropdown-field {
+    max-width: calcrem(350px);
+    height: calcrem(44px);
+    color: $tertiaryColor;
+    font-size: calcrem(20px);
+    font-family: "BrixSansBold";
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: 0.3px;
+    border: solid 1px $quinaryColor;
+  }
+
+  .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calcrem(44px);
+    height: calcrem(44px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $tertiaryColor;
+  }
+
+  .down {
+    transform: rotate(90deg);
+  }
+
+  .up {
+    transform: rotate(270deg);
+  }
+
+  .dropdown-open {
+    position: absolute;
+    border: calcrem(0.5px) solid var(--quinaryColor, $quinaryColor);
+    background-color: var(--quaternaryColor, $quaternaryColor);
+    width: 100%;
+    max-height: calcrem(409px);
+    z-index: 1000;
+    overflow-y: auto;
+    margin-bottom: calcrem(10px);
+    top: 100%;
+  }
+
+  .reverse {
+    top: auto;
+    bottom: 100%;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .divider-label-distance-first {
+    margin-top: calcrem(16px) !important;
+  }
+
+  .list-item {
+    font-family: "BrixSansBold";
+    font-size: calcrem(20px);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: 0.3px;
+    color: var(--tertiaryColor, $tertiaryColor);
+    margin: 0;
+    padding: calcrem(10px);
+    &:hover {
+      background: var(--secondaryColor, $secondaryColor);
+      color: var(--quaternaryColor, $quaternaryColor);
+    }
+  }
+
+  .label-styling {
+    font-family: 'BrixSansBold';
+    font-size: calcrem(20px);
+    width: 100%;
+    word-break: break-all;
+    line-height: normal;
+    @include ellipsisCustom(1);
+  }
+
+  .divider-margin {
+    margin-left: calcrem(16px);
+    margin-right: calcrem(16px);
+  }
+
+  .dropdown-position {
+    position: relative;
+  }
+
+  .custom-input {
+    height: calcrem(42px);
+  }
+
+  .label-placeholder {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    opacity: 1;
+    text-overflow: ellipsis;
+    font-family: 'BrixSansBold';
+    font-size: calcrem(20px);
+    line-height: 0.9;
+    margin: 0 calcrem(12px);
+    background: transparent;
+    color: var(--tertiaryColor, $tertiaryColor);
+  }
+
+  .label-placeholder::placeholder {
+    color: var(--tertiaryColor, $tertiaryColor);
+  }
+
+  .label-placeholder::placeholder {
+    color: var(--tertiaryColor, $tertiaryColor);
+  }
+
+  .icon-positioning {
+    margin: calcrem(14px) calcrem(2px) 0 0;
+  }
+}
+
+
+

@@ -1,0 +1,100 @@
+{
+  "list1": [
+    {
+      "id": 1,
+      "text": "You would buy new and run the car until it had well over 200,000 km and then sell it and it went to another country",
+      "subtext": "124,99 € / year incl. 19% TVA",
+      "value": "one",
+      "checked": false,
+      "height": false,
+      "tooltipActive": false
+    },
+    {
+      "id": 2,
+      "text": "Up to 3.000€ purchasing price",
+      "subtext": "124,99 € / year incl. 19% TVA",
+      "value": "two",
+      "checked": false,
+      "height": false,
+      "tooltipActive": false
+    },
+    {
+      "id": 3,
+      "text": "Up to 3.000€ purchasing price",
+      "subtext": "124,99 € / year incl. 19% TVA",
+      "value": "three",
+      "checked": false,
+      "height": false,
+      "tooltipActive": true
+    },
+    {
+      "id": 4,
+      "text": "Up to 3.000€ purchasing price",
+      "subtext": "124,99 € / year incl. 19% TVA",
+      "value": "four",
+      "checked": false,
+      "height": false,
+      "tooltipActive": true
+    }
+  ],
+  "form": [
+    {
+      "controls": [
+        {
+          "type": "radio",
+          "name": "radio-button-list",
+          "properties": {
+            "id": "",
+            "name": "radio-button-list",
+            "type": "radio",
+            "validators": [
+              {
+                "type": "requiredTrue",
+                "errorMessage": "This field is required",
+                "priority": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "list2": [
+    {
+      "id": 1,
+      "text": "You would buy new and run the car until it had well over 200,000 km and then sell it and it went to another country",
+      "subtext": "124,99 € / year incl. 19% TVA",
+      "value": "one",
+      "checked": false,
+      "height": false,
+      "tooltipActive": false
+    },
+    {
+      "id": 2,
+      "text": "Up to 3.000€ purchasing price",
+      "subtext": "124,99 € / year incl. 19% TVA",
+      "value": "two",
+      "checked": false,
+      "height": false,
+      "tooltipActive": false
+    },
+    {
+      "id": 3,
+      "text": "Up to 3.000€ purchasing price",
+      "subtext": "124,99 € / year incl. 19% TVA",
+      "value": "three",
+      "checked": false,
+      "height": false,
+      "tooltipActive": true
+    },
+    {
+      "id": 4,
+      "text": "Up to 3.000€ purchasing price",
+      "subtext": "124,99 € / year incl. 19% TVA",
+      "value": "four",
+      "checked": false,
+      "height": false,
+      "tooltipActive": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+:host {
+  @include default-font();
+  .report-card {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 13px 20px;
+    height: 162px;
+    .report-value {
+      text-align: right;
+      font-size: 3.3rem;
+      letter-spacing: 0.84px;
+      font-family: "BrixSansBold";
+      color: #000;
+      .decimal-value {
+          font-size: 1.5rem;
+      }
+    }
+  }
+}

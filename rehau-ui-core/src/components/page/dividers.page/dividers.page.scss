@@ -1,0 +1,13 @@
+// dividers.page styles
+:host {
+  @include default-font();
+  .div-p {
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(14px);
+    padding: calcrem(10px);
+  }
+
+  .div-background-color {
+    background: var(--primaryColor, $primaryColor);
+  }
+}

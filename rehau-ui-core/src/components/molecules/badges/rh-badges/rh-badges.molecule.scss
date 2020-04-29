@@ -1,0 +1,49 @@
+:host {
+  @include default-font();
+  .badge {
+    text-align: center;
+    font-family: 'BrixSansBold';
+    font-size: calcrem(10px);
+    letter-spacing: calcrem(0.44px);
+    text-transform: uppercase;
+    width: auto;
+    padding: 0 12px;
+    min-width: calcrem(56px);
+    font-weight: 500;
+    cursor: pointer;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calcrem(19.6px);
+    color: var(--quaternaryColor, $quaternaryColor);
+    &.badgeRound {
+      border-radius: calcrem(9px);
+    }
+  }
+
+  .badge-active {
+    color: var(--quaternaryColor, $quaternaryColor);
+    background: var(--secondaryColor, $secondaryColor);
+  }
+
+  .badge-disable {
+    color: var(--quinaryColor, $quinaryColor);
+    font-family: 'BrixSansRegular';
+    font-size: calcrem(11px);
+    line-height: calcrem(14px);
+    margin-top: calcrem(2px);
+    width: auto;
+    min-width: calcrem(56px);
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--quaternaryColor, $quaternaryColor);
+    border: (1px) solid var(--senaryColor, $senaryColor);
+  }
+
+  .badge-transparent {
+    color: var(--quinaryColor, $quinaryColor) !important;
+    border: calcrem(1px) solid var(--quinaryColor, $quinaryColor) !important;
+    background-color: var(--quaternaryColor, $quaternaryColor) !important;
+  }
+}

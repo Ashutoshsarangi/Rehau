@@ -1,0 +1,326 @@
+.container-fluid {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $container-fluid-max;
+  padding: 0 size(20px);
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow: auto;
+}
+
+
+.default-header {
+  height: size($header-height);
+  width: 100%;
+  background-color: var(--quaternaryColor, $quaternaryColor);
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.page {
+  margin-top: 18px;
+  max-height: calc(100% - #{size($header-height)} - 18px);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+
+.primary-background {
+  background-color: $primary-background !important;
+}
+
+.secondary-background {
+  background-color: $secondary-background !important;
+}
+
+.tertiary-background {
+  background-color: $tertiary-background !important;
+}
+
+.quaternary-background {
+  background-color: $quaternary-background !important;
+}
+
+.quinary-background {
+  background-color: $quinary-background !important;
+}
+
+
+// typography starts
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-family: "BrixSansRegular";
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+
+h1, .h1 {
+    font-size: calcrem(36px);
+    font-family: "BrixSansBlack";
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 0.3px;
+    color: var(--tertiaryColor, $tertiaryColor);
+    // text-transform: uppercase;
+    // line-height: 1.15em;
+}
+h2, .h2{
+    font-size: calcrem(28px);
+    font-family: "BrixSansBlack";
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.27px;
+    color: var(--tertiaryColor, $tertiaryColor);
+}
+h3, .h3{
+    font-size: calcrem(24px);
+    font-family: "BrixSansBold";
+    // line-height: 1.4em;
+    // margin: 20px 0 10px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.3px;
+    color: var(--tertiaryColor, $tertiaryColor);
+}
+h4, .h4{
+    font-size: calcrem(18px);
+    font-family: "BrixSansBold";
+    // line-height: 1.4em;
+    // font-weight: 300;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.23px;
+    color: var(--tertiaryColor, $tertiaryColor);
+}
+h5, .h5 {
+    font-size: calcrem(17px);
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+h6, .h6{
+    font-size: calcrem(16px);
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+}
+
+a.link {
+  font-family: "BrixSansBold";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.27px;
+  color: var(--primaryColor, $primaryColor);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.link.primary-link {
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+}
+
+.secondary-link {
+  display: block;
+  width: 100%;
+}
+
+.card-blog .card-title{
+    font-weight: $font-weight-extra-bold;
+}
+
+.description,
+.card-description,
+.footer-big p{
+    color: var(--senaryColor, $senaryColor);
+}
+
+.abstract {
+  font-family: "BrixSansBold";
+  font-size: calcrem(18px);
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.17px;
+  color: var(--tertiaryColor, $tertiaryColor);
+}
+
+.copy {
+  font-family: "BrixSansRegular";
+  font-size: calcrem(18px);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.17px;
+  color: var(--tertiaryColor, $tertiaryColor);
+}
+
+.copy-small {
+  font-family: "BrixSansRegular";
+  font-size: calcrem(16px);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.15px;
+  color: var(--tertiaryColor, $tertiaryColor);
+}
+
+.highlighter-text {
+  font-family: "BrixSansLight";
+  font-size: calcrem(24px);
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.23px;
+  color: var(--tertiaryColor, $tertiaryColor);
+}
+
+.additional-copy {
+  font-family: "BrixSansRegular";
+  font-size: calcrem(18px);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.23px;
+  color: var(--quinaryColor, $quinaryColor);
+}
+
+.additional-copy-small {
+  font-family: "BrixSansRegular";
+  font-size: calcrem(14px);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.13px;
+  color: var(--quinaryColor, $quinaryColor);
+}
+
+.label {
+  font-family: "BrixSansRegular";
+  font-size: calcrem(12px);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  color: var(--octonaryColor, $octonaryColor);
+  display: block;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+// typography end
+
+
+// Ionic attributes
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.no-margin {
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+}
+
+.card {
+  display: block;
+  overflow: hidden;
+  margin: 12px;
+  border-radius: 2px;
+  width: calc(100% - 24px);
+  font-size: 1.4rem;
+  background: var(--quaternaryColor, $quaternaryColor);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.no-padding {
+  padding-top: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+.text-wrap {
+  white-space: normal !important;
+  word-wrap: break-word;
+}
+
+// Grid classes
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+
+  &.align-items-start {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+
+.tab-container {
+  margin-bottom: size($navbar-size);
+  width: 100%;
+  .inner-wrapper {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: $rh-lg-min) {
+  .tab-container {
+    width: calc(100% - #{$navbar-size}); 
+  }
+}
+
+@each $breakpoint in $breakpoints {
+  $name: nth($breakpoint, 1);
+  $size: nth($breakpoint, 2);
+
+  @media only screen and (min-width: $size) {
+    .col-#{$name}-auto {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: auto;
+    }
+  }
+}

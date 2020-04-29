@@ -1,0 +1,14 @@
+:host {
+    @include default-font();
+  
+    .horizontal-product-web {
+      width: 100%;
+    }
+  
+    @media screen and (min-width: 992px) {
+      .horizontal-product-web {
+        width: calcrem(386px);
+      }
+    }
+  }
+  

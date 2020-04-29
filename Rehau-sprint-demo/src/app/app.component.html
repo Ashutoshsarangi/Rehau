@@ -1,0 +1,10 @@
+<div [@routeAnimations]="o && o.activatedRouteData 
+&& o.activatedRouteData['animation']">
+  <rh-header *ngIf="!(this.router.url === '' || this.router.url === '/login' || this.router.url === '/on-boarding')" [headertitle]='header.title'
+    [subtitle]='header.subTitle' [innerpageheader]='header.innerPageHeader' (backButtonAction)="backAction($event)" [deviceOnline]="flag"></rh-header>
+  <ng-container *ngIf="showLoader">
+    <rh-loader></rh-loader>
+  </ng-container>
+
+  <router-outlet #o="outlet"></router-outlet>
+</div>

@@ -1,0 +1,132 @@
+
+:host {
+  @include default-font();
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab {
+    width: 100%;
+    color: var(--tertiaryColor, $tertiaryColor);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &-label {
+      display: block;
+      padding: calcrem(15px) 0;
+      font-family: 'BrixSansBold';
+      font-size: calcrem(18px);
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: calcrem(0.23px);
+      cursor: pointer;
+      /* Icon */
+    }
+    &-title {
+      margin-bottom: calcrem(5px);
+      display: flex;
+      justify-content: space-between;
+      & .label {
+        width: auto !important;
+        margin-left: calcrem(25px);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &::after {
+          content: "\276F";
+          display: block;
+          font-size: calcrem(12px);
+          margin-left: calcrem(6px);
+          text-align: center;
+          transition: all .35s;
+        }
+        &.down-arrow {
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+    &-subtitle {
+      font-family: "BrixSansRegular";
+      font-size: calcrem(18px);
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: calcrem(0.23px);
+      display: flex;
+      justify-content: space-between;
+      & .badge {
+        padding: calcrem(4px) calcrem(12px);
+        margin-left: calcrem(25px);
+        font-family: "BrixSansBold";
+        font-size: calcrem(10px);
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: calcrem(0.44px);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--quaternaryColor, $quaternaryColor);
+      }
+      & .badge-active {
+        color: var(--quaternaryColor, $quaternaryColor);
+        background: var(--secondaryColor, $secondaryColor);
+      }
+    
+      & .badge-disable {
+        color: var(--quinaryColor, $quinaryColor);
+        font-family: 'BrixSansRegular';
+        font-size: calcrem(11px);
+        line-height: calcrem(14px);
+        margin-top: calcrem(2px);
+        width: auto;
+        min-width: calcrem(56px);
+        font-weight: 500;
+        cursor: pointer;
+        background: var(--quaternaryColor, $quaternaryColor);
+        border: (1px) solid var(--senaryColor, $senaryColor);
+      }
+    }
+    &-content {
+      padding-bottom: calcrem(15px);
+      max-height: 0;
+      font-family: "BrixSansRegular";
+      font-size: calcrem(18px);
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: calcrem(0.23px);
+      color: var(--tertiaryColor, $tertiaryColor);
+      background: var(--quaternaryColor, $quaternaryColor);
+    }
+    &-active {
+      & .tab-content {
+        padding-bottom: 1.5rem;
+        max-height: 0;
+        font-family: "BrixSansRegular";
+        font-size: 1.8rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.023rem;
+        color: var(--tertiaryColor, $tertiaryColor);
+        background: var(--quaternaryColor, $quaternaryColor);
+      }
+    }
+  }
+}
+.tabContainer {
+  transition:  0.3s ease-in-out 0s;
+}
+.active-content {
+  padding-bottom: calcrem(15px);
+  transition:  0.3s ease-in 0s;
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Brix Sans';
+    src: url('BrixSansBlack.eot');
+    src: url('BrixSansBlack.eot?#iefix') format('embedded-opentype'),
+        url('BrixSansBlack.woff2') format('woff2'),
+        url('BrixSansBlack.woff') format('woff'),
+        url('BrixSansBlack.ttf') format('truetype'),
+        url('BrixSansBlack.svg#BrixSansBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brix Sans';
+    src: url('BrixSansRegular.eot');
+    src: url('BrixSansRegular.eot?#iefix') format('embedded-opentype'),
+        url('BrixSansRegular.woff2') format('woff2'),
+        url('BrixSansRegular.woff') format('woff'),
+        url('BrixSansRegular.ttf') format('truetype'),
+        url('BrixSansRegular.svg#BrixSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brix Sans';
+    src: url('BrixSansLight.eot');
+    src: url('BrixSansLight.eot?#iefix') format('embedded-opentype'),
+        url('BrixSansLight.woff2') format('woff2'),
+        url('BrixSansLight.woff') format('woff'),
+        url('BrixSansLight.ttf') format('truetype'),
+        url('BrixSansLight.svg#BrixSansLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brix Sans';
+    src: url('BrixSansBold.eot');
+    src: url('BrixSansBold.eot?#iefix') format('embedded-opentype'),
+        url('BrixSansBold.woff2') format('woff2'),
+        url('BrixSansBold.woff') format('woff'),
+        url('BrixSansBold.ttf') format('truetype'),
+        url('BrixSansBold.svg#BrixSansBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,22 @@
+<div class="inner-container">
+    <div class='row'>
+        <div class='statusHead'>{{'support-access' | translate}}</div>
+        <div class='toggleBtn'>
+        <rh-toggle-switch id='rh-toggle-switch_1' left-text='OFF' right-text='ON' (switchClick)="toggleAction($event)">
+        </rh-toggle-switch>
+        </div>
+    </div>
+    <div class='row desc-div'>
+        <span class="text-desc">{{'get-help-description' | translate}}</span>
+    </div>
+    <div class='listingItem'>
+        <rh-list-item-primary title='Get help'
+            padding=true icon='icon-next' 
+            (checkEvent)="openSupportUrl()"
+            routerLinkActive="active"
+        ></rh-list-item-primary>
+    </div>
+    
+</div>
+
+        

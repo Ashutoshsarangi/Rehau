@@ -1,0 +1,37 @@
+:host {
+  @include default-font();
+  & > .grid {
+    overflow: hidden;
+    & > .row {
+      width: 200%;
+
+      & > .slider-container {
+        padding: 0;
+        background: var(--quaternaryColor, $quaternaryColor);
+        position: relative;
+        z-index: 1;
+
+        &.animated {
+          transition: left 0.3s linear 0s;
+        }
+
+        &.open > :first-child {
+          pointer-events: none;
+        }
+      }
+
+      & > .buttons-container {
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        & > .row {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: relative;
+        }
+      }
+    }
+  }
+}

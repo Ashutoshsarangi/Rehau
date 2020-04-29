@@ -1,0 +1,77 @@
+
+// Rehau primary colors
+$primaryColor: #dd0060 !default;
+$secondaryColor: #37a58c !default;
+$tertiaryColor: #000000 !default;
+$quaternaryColor: #ffffff !default;
+$quinaryColor: #7f7f7f;
+$senaryColor: #e5e5e5 !default;
+$septenaryColor: #f2f2f2;
+$octonaryColor: #bfbfbf;
+$nonaryColor: #b1b2b3;
+$decenaryColor: rgba(0, 0, 0, 0.05);
+$undenaryColor: #d9d9d9;
+$duodenaryColor: rgba(0, 0, 0, 0.25);
+$thirteenthColor: #b0b0b0;
+$fourteenthColor: rgba(0, 0, 0, 0.50);
+$fifteenthColor: #818181;
+$sixteenthColor: #4e4e4e;
+$seventeenthColor: rgba(0, 0, 0, 0.3);
+$nineteenthColor: #ff9500;
+
+:root {
+  --primaryColor: #dd0060;
+  --secondaryColor: #37a58c;
+  --tertiaryColor: #000000;
+  --quaternaryColor: #ffffff;
+  --quinaryColor: #7f7f7f;
+  --senaryColor: #e5e5e5;
+  --septenaryColor: #f2f2f2;
+  --octonaryColor: #bfbfbf;
+  --nonaryColor: #b1b2b3;
+  --decenaryColor: rgba(0, 0, 0, 0.05);
+  --undenaryColor: #d9d9d9;
+  --duodenaryColor: rgba(0, 0, 0, 0.25);
+  --thirteenthColor: #b0b0b0;
+  --fourteenthColor: rgba(0, 0, 0, 0.50);
+  --fifteenthColor: #818181;
+  --sixteenthColor: #4e4e4e;
+  --seventeenthColor: rgba(0, 0, 0, 0.3);
+  --nineteenthColor: #ff9500;
+}
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  // rehau primary colors
+  primaryColor: #dd0060,
+  secondaryColor: #37a58c,
+  tertiaryColor: #000000,
+  quaternaryColor: #ffffff,
+  quinaryColor: #7f7f7f,
+  senaryColor: #e5e5e5,
+  septenaryColor: #f2f2f2,
+  octonaryColor: #bfbfbf,
+  nonaryColor: #b1b2b3,
+  decenaryColor: rgba(0, 0, 0, 0.05),
+  undenaryColor: #d9d9d9,
+  duodenaryColor: rgba(0, 0, 0, 0.25),
+  thirteenthColor: #b0b0b0,
+  fourteenthColor: rgba(0, 0, 0, 0.50),
+  fifteenthColor: #818181,
+  sixteenthColor: #4e4e4e,
+  seventeenthColor: rgba(0, 0, 0, 0.3),
+  nineteenthColor: #ff9500,
+);
+
+$primary-background: $quaternaryColor;
+$secondary-background: $decenaryColor;
+$tertiary-background: $nonaryColor;
+$quaternary-background: $tertiaryColor;
+$quinary-background: $secondaryColor;

@@ -1,0 +1,76 @@
+// rh-breadcrumbs.molecule styles
+:host {
+  @include default-font();
+
+  .label-SM {
+    word-break: break-all;
+    font-size: calcrem(14px);
+    line-height: calcrem(17px);
+    letter-spacing: calcrem(0.4px);
+    font-family: 'BrixSansRegular';
+    @include ellipsisCustom(1);
+  }
+
+  .breadcrumbs_container {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--decenaryColor, $decenaryColor);
+    height: calcrem(30px);
+
+    .crumbs_icon {
+      display: inline-block;
+      align-items: center;
+
+      .prova {
+        margin: 0 calcrem(20px);
+        cursor: pointer;
+        color: var(--quinaryColor, $quinaryColor);
+        font-size: calcrem(14px);
+        line-height: calcrem(17px);
+        letter-spacing: calcrem(0.4px);
+        font-family: 'BrixSansRegular';
+      }
+
+      &:first-child {
+        padding-left: calcrem(25px);
+      }
+    }
+
+    .crumbs-divider {
+      padding-right: calcrem(16px);
+      padding-left: calcrem(16px);
+    }
+
+    .sm-crumbs {
+      display: flex;
+      padding-left: calcrem(16px);
+      font-family: 'BrixSansRegular';
+      color: var(--quinaryColor, $quinaryColor);
+      font-size: calcrem(14px);
+      letter-spacing: calcrem(0.4px);
+      line-height: calcrem(17px);
+
+      .sm-back-crumb {
+        cursor: pointer;
+
+        .sm-back-icon {
+          width: calcrem(16px);
+          text-align: center;
+        }
+
+        label {
+          word-break: break-all;
+          cursor: pointer;
+          @include ellipsisCustom(1);
+        }
+      }
+
+      .sm-current-crumb {
+        font-family: 'BrixSansRegular';
+        color: var(--tertiaryColor, $tertiaryColor);
+
+
+      }
+    }
+  }
+}

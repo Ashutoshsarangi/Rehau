@@ -1,0 +1,9 @@
+:host {
+  @include default-font();
+
+  .div-with-background {
+    background: var(--fifteenthColor, $fifteenthColor);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

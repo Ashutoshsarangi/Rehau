@@ -1,0 +1,171 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "rehau-functional-core": {
+      "root": "projects/rehau-functional-core",
+      "sourceRoot": "projects/rehau-functional-core/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/rehau-functional-core/tsconfig.lib.json",
+            "project": "projects/rehau-functional-core/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rehau-functional-core/src/test.ts",
+            "tsConfig": "projects/rehau-functional-core/tsconfig.spec.json",
+            "karmaConfig": "projects/rehau-functional-core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/rehau-functional-core/tsconfig.lib.json",
+              "projects/rehau-functional-core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "rehau-functional-core-testing": {
+      "root": "projects/rehau-functional-core-testing/",
+      "sourceRoot": "projects/rehau-functional-core-testing/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/rehau-functional-core-testing",
+            "index": "projects/rehau-functional-core-testing/src/index.html",
+            "main": "projects/rehau-functional-core-testing/src/main.ts",
+            "polyfills": "projects/rehau-functional-core-testing/src/polyfills.ts",
+            "tsConfig": "projects/rehau-functional-core-testing/tsconfig.app.json",
+            "assets": [
+              "projects/rehau-functional-core-testing/src/favicon.ico",
+              "projects/rehau-functional-core-testing/src/assets"
+            ],
+            "styles": [
+              "projects/rehau-functional-core-testing/src/styles.css"
+            ],
+            "scripts": [],
+            "es5BrowserSupport": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/rehau-functional-core-testing/src/environments/environment.ts",
+                  "with": "projects/rehau-functional-core-testing/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "rehau-functional-core-testing:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "rehau-functional-core-testing:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "rehau-functional-core-testing:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rehau-functional-core-testing/src/test.ts",
+            "polyfills": "projects/rehau-functional-core-testing/src/polyfills.ts",
+            "tsConfig": "projects/rehau-functional-core-testing/tsconfig.spec.json",
+            "karmaConfig": "projects/rehau-functional-core-testing/karma.conf.js",
+            "styles": [
+              "projects/rehau-functional-core-testing/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/rehau-functional-core-testing/src/favicon.ico",
+              "projects/rehau-functional-core-testing/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/rehau-functional-core-testing/tsconfig.app.json",
+              "projects/rehau-functional-core-testing/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "rehau-functional-core-testing-e2e": {
+      "root": "projects/rehau-functional-core-testing-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/rehau-functional-core-testing-e2e/protractor.conf.js",
+            "devServerTarget": "rehau-functional-core-testing:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "rehau-functional-core-testing:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/rehau-functional-core-testing-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "rehau-functional-core"
+}

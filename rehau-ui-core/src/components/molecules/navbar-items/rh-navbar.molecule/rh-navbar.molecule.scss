@@ -1,0 +1,116 @@
+:host {
+  @include default-font();
+
+  font-family: 'BrixSansRegular';
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .container-element {
+    min-height: calcrem(48px);
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    background-color: var(--quaternaryColor, $quaternaryColor);
+  }
+
+  .label-text {
+    font-size: calcrem(10px);
+    text-transform: capitalize;
+    order: 2;
+  }
+
+  .display-align {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .row-element {
+    min-height: calcrem(48px);
+    height: size($navbar-size);
+    box-shadow: 0 0 1px 0 var(--seventeenthColor, $seventeenthColor);
+    background-color: var(--quaternaryColor, $quaternaryColor);
+  }
+
+  .col-element {
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-element-selected {
+    height: auto;
+    font-family: 'BrixSansRegular';
+    display: flex;
+    justify-content: center;
+  }
+
+  .label-element {
+    width: auto;
+    color: var(--quinaryColor, $quinaryColor);
+    font-size: calcrem(14px);
+    line-height: calcrem(16px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &.tab-active {
+      color: var(--tertiaryColor, $tertiaryColor);
+    }
+
+    &.left-padding {
+      padding-left: calcrem(4px);
+    }
+
+    .margin-right {
+      margin-right: 10px;
+    }
+  }
+
+  .tab-icon {
+    position: relative;
+    margin: auto 10px;
+  }
+
+  .notification {
+    height: calcrem(15px);
+    width: calcrem(15px);
+    border-radius: 50%;
+    background: var(--primaryColor, $primaryColor);
+    position: absolute;
+    bottom: 60%;
+    left: 40%;
+  }
+
+  .tab-active {
+    .notification {
+      // display: none;
+      background: var(--quaternaryColor, $quaternaryColor);
+      border: calcrem(1px) solid var(--primaryColor, $primaryColor);
+    }
+  }
+
+  @media screen and (min-width: $rh-lg-min) {
+    .container-element {
+      width: auto;
+      height: 100%;
+      bottom: auto;
+      top: 0;
+      left: auto;
+      right: 0;
+    }
+    .display-align {
+      flex-direction: column;
+      height: 100% !important;
+      width: size($navbar-size);
+    }
+  }
+}

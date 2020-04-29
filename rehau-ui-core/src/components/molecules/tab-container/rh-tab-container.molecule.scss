@@ -1,0 +1,11 @@
+:host {
+  @include default-font();
+  
+}
+.tab-container{
+  border: 2px solid red;
+  position: absolute;
+  margin: 5px;
+  padding: 10px;
+  bottom: 0;
+}

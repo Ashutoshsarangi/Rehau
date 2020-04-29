@@ -1,0 +1,103 @@
+:host {
+  @include default-font();
+
+  .shape-padding {
+    padding: calcrem(16px) calcrem(12px);
+  }
+
+  .tooltip-container {
+    margin-top: calcrem(3.2px);
+    margin-left: calcrem(14px);
+  }
+
+  .checkbox-container {
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      height: calcrem(28px);
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      .message-container {
+        display: inline-block;
+        font-family: 'BrixSansRegular';
+        font-size: calcrem(18px);
+        line-height: 1.33;
+        letter-spacing: 0.17px;
+        color: var(--tertiaryColor, $tertiaryColor);
+        .clickable-text {
+          cursor: pointer;
+          color: var(--secondaryColor, $secondaryColor);
+        }
+      }
+      /* Hide the browser's default checkbox */
+      & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &[type=checkbox][disabled]  {
+          cursor: not-allowed;
+          ~ .checkmark {
+            cursor: not-allowed;
+            border-color: var(--nonaryColor, $nonaryColor);
+          }
+          ~ .message-container {
+            cursor: not-allowed;
+            color: var(--nonaryColor, $nonaryColor);
+          }
+        }
+      }
+
+      /* Create a custom checkbox */
+      .checkmark {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calcrem(26px);
+        width: calcrem(26px);
+        background-color: transparent;
+        border: var(--octonaryColor, $octonaryColor) calcrem(1px) solid;
+        margin-right: calcrem(12px);
+        &.error {
+          background-color: var(--primaryColor, $primaryColor);
+          border-color: var(--primaryColor, $primaryColor);
+        }
+      }
+
+      /* When the checkbox is checked */
+      & input:checked ~ .checkmark {
+        background-color: var(--tertiaryColor, $tertiaryColor);
+        border-color: transparent;
+      }
+
+      /* Show the checkmark when checked */
+      & input:checked ~ .checkmark:after {
+        content: "\e92b";
+        font-family: 'icomoon';
+        position: absolute;
+        color: var(--quaternaryColor, $quaternaryColor);
+        width: calcrem(20px);
+        height: calcrem(17.2px);
+        font-size: calcrem(15px);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .error-container {
+      color: var(--primaryColor, $primaryColor);
+      background: var(--quaternaryColor, $quaternaryColor);
+      padding: calcrem(8px);
+      margin-top: calcrem(6px);
+      border-top: calcrem(1px) solid var(--primaryColor, $primaryColor);
+      font-size: calcrem(12px);
+    }
+  }
+}

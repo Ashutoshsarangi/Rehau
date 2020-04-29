@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?d96yn4');
+  src:  url('fonts/icomoon.eot?d96yn4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?d96yn4') format('truetype'),
+    url('fonts/icomoon.woff?d96yn4') format('woff'),
+    url('fonts/icomoon.svg?d96yn4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rz-schritt-9-1 .path1:before {
+  content: "\e904";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-9-1 .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-9-1 .path3:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-9-1 .path4:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-time:before {
+  content: "\e908";
+}
+.icon-time-filled:before {
+  content: "\e909";
+  color: #dd0060;
+}
+.icon-settings:before {
+  content: "\e90a";
+}
+.icon-settings-filled:before {
+  content: "\e90b";
+  color: #dd0060;
+}
+.icon-rz-willkommen .path1:before {
+  content: "\e90c";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-willkommen .path2:before {
+  content: "\e90d";
+  margin-left: -0.7841796875em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-9-0 .path1:before {
+  content: "\e90e";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-9-0 .path2:before {
+  content: "\e90f";
+  margin-left: -0.8017578125em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-8-0 .path1:before {
+  content: "\e910";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-8-0 .path2:before {
+  content: "\e911";
+  margin-left: -1.59375em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-7-0 .path1:before {
+  content: "\e912";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-7-0 .path2:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-7-0 .path3:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-7-0 .path4:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-6-1 .path1:before {
+  content: "\e916";
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-6-1 .path2:before {
+  content: "\e917";
+  margin-left: -1.693359375em;
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-6-0 .path1:before {
+  content: "\e918";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-6-0 .path2:before {
+  content: "\e919";
+  margin-left: -0.748046875em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-5-2 .path1:before {
+  content: "\e91a";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-5-2 .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-5-1 .path1:before {
+  content: "\e91c";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-5-1 .path2:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-5-0 .path1:before {
+  content: "\e91e";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-5-0 .path2:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-4-0 .path1:before {
+  content: "\e920";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-4-0 .path2:before {
+  content: "\e921";
+  margin-left: -1.888671875em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-3-0 .path1:before {
+  content: "\e922";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-3-0 .path2:before {
+  content: "\e923";
+  margin-left: -1.3525390625em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-2-0 .path1:before {
+  content: "\e924";
+  color: rgb(0, 0, 0);
+}
+.icon-rz-schritt-2-0 .path2:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-1-0 .path1:before {
+  content: "\e926";
+  color: rgb(55, 165, 140);
+}
+.icon-rz-schritt-1-0 .path2:before {
+  content: "\e927";
+  margin-left: -0.98828125em;
+  color: rgb(0, 0, 0);
+}
+.icon-rz-abschluss .path1:before {
+  content: "\e928";
+  color: rgb(0, 0, 0);
+}
+.icon-rz-abschluss .path2:before {
+  content: "\e929";
+  margin-left: -0.927734375em;
+  color: rgb(55, 165, 140);
+}
+.icon-new-pairing-icon-copy .path1:before {
+  content: "\e92a";
+  color: none;
+}
+.icon-new-pairing-icon-copy .path2:before {
+  content: "\e92b";
+  margin-left: -2.09765625em;
+  color: none;
+}
+.icon-new-pairing-icon-copy .path3:before {
+  content: "\e92c";
+  margin-left: -2.09765625em;
+  color: rgb(0, 0, 0);
+}
+.icon-new-pairing-icon-copy .path4:before {
+  content: "\e92d";
+  margin-left: -2.09765625em;
+  color: rgb(0, 0, 0);
+}
+.icon-new-pairing-icon-copy .path5:before {
+  content: "\e92e";
+  margin-left: -2.09765625em;
+  color: rgb(255, 255, 255);
+}
+.icon-new-pairing-icon-copy .path6:before {
+  content: "\e92f";
+  margin-left: -2.09765625em;
+  color: rgb(55, 165, 140);
+}
+.icon-home:before {
+  content: "\e930";
+}
+.icon-home-filled:before {
+  content: "\e931";
+  color: #dd0060;
+}
+.icon-group-3:before {
+  content: "\e932";
+  color: #dd0060;
+}
+.icon-bell:before {
+  content: "\e933";
+}
+.icon-bell-filled:before {
+  content: "\e934";
+  color: #dd0060;
+}
+.icon-rehau_logo .path1:before {
+  content: "\e900";
+  color: rgb(0, 0, 0);
+}
+.icon-rehau_logo .path2:before {
+  content: "\e901";
+  margin-left: -3.0625em;
+  color: rgb(60, 180, 152);
+}
+.icon-rehau_logo .path3:before {
+  content: "\e902";
+  margin-left: -3.0625em;
+  color: rgb(221, 0, 96);
+}
+.icon-rehau_logo .path4:before {
+  content: "\e903";
+  margin-left: -3.0625em;
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+}

@@ -1,0 +1,28 @@
+<div class="inner-container">
+  <div >
+    <img class="banner" src="assets/img/banner.jpg" alt="">
+  </div>
+  <div class="inner">
+    <div class="header">
+      <h1>{{'Landing.Title' | translate}}</h1>
+      <p class="copy">{{'Landing.SubTitle' | translate}}</p>
+    </div>
+    <div class="content">
+      <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-clip-rotate">
+        <p style="color: white"> Loading... </p>
+      </ngx-spinner>
+      <div class="inner-wrapper">
+        <h4>{{'Landing.MainContent' | translate}}</h4>
+        <span class="copy-small">{{'Landing.Subcontent' | translate}}</span>
+      </div>
+      <div class="inner-wrapper">
+          <rh-primary-button id='rh-primary-button_10' text='Login' standard=true
+            icon="icon-next" disabled=false (click)="login('login token')"></rh-primary-button>
+      </div>
+      <div class="inner-wrapper">
+        <span class="additional-copy-small">{{'Landing.CreateAnAccount' | translate}}</span>
+        <a class="link secondary-link" (click)="login('register token')">{{'Landing.Registration' | translate}}</a>
+      </div>
+    </div>
+  </div>
+</div>

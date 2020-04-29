@@ -1,0 +1,15 @@
+@import 'reset';
+
+//FLEXBOX GRID BREAKPOINTS
+$rh-md-min: 768px;
+$rh-lg-min: 1024px;
+$rh-xlg-min: 1366px;
+$breakpoints: md $rh-md-min 728px, lg $rh-lg-min 1024px, xlg $rh-xlg-min 1160px;
+//END FLEXBOXGRID BREAKPOINTS
+
+//NODE_MODULES
+@import '../../node_modules/ionicons/dist/scss/ionicons-icons.scss';
+@import '../../node_modules/flexboxgrid-sass/flexboxgrid.scss';
+//END NODE_MODULES
+
+@import 'local-styles';
